@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "description": "Real-time data sync bridge for Hilton PEP",
   "permissions": ["storage", "activeTab"],
-  "host_permissions": ["https://pep.*.hilton.com/*"],
+  "host_permissions": ["https://*.hilton.com/*"],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://pep.*.hilton.com/*"],
+      "matches": ["https://*.hilton.com/*"],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
