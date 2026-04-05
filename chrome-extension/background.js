@@ -2,7 +2,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   // Set default configuration
   chrome.storage.sync.set({
-    webhookUrl: 'http://localhost:3001/api/pep-sync',
+    webhookUrl: 'https://pep-bridge-server-production.up.railway.app/api/pep-sync',
     pollInterval: 60000,
     enabled: true
   });
